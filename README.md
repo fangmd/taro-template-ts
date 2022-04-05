@@ -17,6 +17,7 @@ taro 小程序 模版: react, hooks, ts, mobx
 5. `utils`: 工具文件夹
 6. `components`: 公共组件
 7. `hooks`: 自定义 hook
+8. `plugins`: 小插件，全局第三方库引入
 
 
 ## 模版项目功能
