@@ -21,9 +21,11 @@ taro 小程序 模版: react, hooks, ts, mobx
 
 ## 模版项目功能
 
-- [ ] 网路请求封装: 支持 loading
-- [ ] 列表 demo，支持下拉刷新和上拉加载
+- [x] 网路请求封装: 支持 loading
+- [x] 列表 demo，支持下拉刷新和上拉加载
+- [ ] tab + list
 - [ ] mobx 状态管理
 - [x] @ alias 设置
 - [x] 750 设计稿 UI 适配
 - [x] base ui utils: showToast, showLoading
+- [x] 微信版本更新弹框提示

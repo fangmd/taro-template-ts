@@ -45,8 +45,13 @@ const config = {
   h5: {
     publicPath: "/",
     staticDirectory: "static",
+    esnextModules: [/@antmjs[\\/]vantui/],
     postcss: {
       autoprefixer: {
+        enable: true,
+        config: {},
+      },
+      pxtransform: {
         enable: true,
         config: {},
       },

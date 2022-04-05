@@ -1,19 +1,12 @@
-import { Component } from 'react'
+import { useAppUpdate } from '@/hooks/useAppUpdate'
+import '@/plugins/http'
+
 import './app.less'
 
-class App extends Component {
-  componentDidMount() {}
+const App = ({ children }) => {
+  useAppUpdate()
 
-  componentDidShow() {}
-
-  componentDidHide() {}
-
-  componentDidCatchError() {}
-
-  // this.props.children 是将要会渲染的页面
-  render() {
-    return this.props.children
-  }
+  return children
 }
 
 export default App

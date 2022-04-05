@@ -4,6 +4,7 @@
 
 import Taro from '@tarojs/taro'
 
+/**显示 Toast */
 export const showToast = msg => {
   Taro.showToast({
     title: msg,
@@ -12,10 +13,12 @@ export const showToast = msg => {
   })
 }
 
+/**显示全局 loading */
 export const showLoading = () => {
   Taro.showLoading()
 }
 
+/**隐藏全局 loading */
 export const hideLoading = () => {
   Taro.hideLoading()
 }

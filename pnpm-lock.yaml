@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@antmjs/vantui': ^1.6.1
   '@babel/core': ^7.8.0
   '@babel/runtime': ^7.7.7
   '@tarojs/cli': 3.4.4
@@ -29,6 +30,7 @@ specifiers:
   typescript: ^4.2.3
 
 dependencies:
+  '@antmjs/vantui': 1.6.1_9b20bf37d20d787148ec52d8faeb348d
   '@babel/runtime': 7.17.8
   '@tarojs/cli': 3.4.4_b05b5979d6c4b93b5906dd1501a543e3
   '@tarojs/components': 3.4.4
@@ -65,6 +67,33 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.4
+
+  /@antmjs/iconfont/1.17.5:
+    resolution: {integrity: sha512-ZlLw9V3KF1aAmwsZBKvH/jZs0z5ByTd34hO+KXFB4peR8D5FFm2ivJB2AlzITyQBhioF2Gh0DRHVJAWZej7HcQ==}
+    engines: {node: '>=12', npm: '>=6.4', yarn: '>=1.22'}
+    hasBin: true
+    dev: false
+
+  /@antmjs/vantui/1.6.1_9b20bf37d20d787148ec52d8faeb348d:
+    resolution: {integrity: sha512-PSNkK4GoC/zIWgPnccpZqEVUoAd+u3CgSSgBlyQb/Eo5tP4MVmwSUwtfGxXPCu+Lh7fmVSCXTlMDSxZO4L09dQ==}
+    engines: {node: '>=12', npm: '>=6.4', yarn: '>=1.22'}
+    peerDependencies:
+      '@tarojs/components': '>=3.3.0'
+      '@tarojs/taro': '>=3.3.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@antmjs/iconfont': 1.17.5
+      '@babel/runtime-corejs3': 7.17.8
+      '@tarojs/components': 3.4.4
+      '@tarojs/taro': 3.4.4
+      '@vant/icons': 1.8.0
+      classnames: 2.3.1
+      dayjs: 1.11.0
+      rc-util: 5.19.3_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
 
   /@babel/code-frame/7.0.0-beta.44:
     resolution: {integrity: sha512-cuAuTTIQ9RqcFRJ/Y8PvTh+paepNcaGxwQwjIDRWPXmzzyAeCO4KqS9ikMvq0MCbRk6GlYKwfzStrcP3/jSL8g==}
@@ -2310,6 +2339,10 @@ packages:
     dependencies:
       '@typescript-eslint/types': 4.33.0
       eslint-visitor-keys: 2.1.0
+
+  /@vant/icons/1.8.0:
+    resolution: {integrity: sha512-sKfEUo2/CkQFuERxvkuF6mGQZDKu3IQdj5rV9Fm0weJXtchDSSQ+zt8qPCNUEhh9Y8shy5PzxbvAfOOkCwlCXg==}
+    dev: false
 
   /@vue/babel-helper-vue-jsx-merge-props/1.2.1:
     resolution: {integrity: sha512-QOi5OW45e2R20VygMSNhyQHvpdUwQZqGPc748JLGCYEy+yp8fNFNdbNIGAgZmi9e+2JHPd6i6idRuqivyicIkA==}
@@ -4623,6 +4656,10 @@ packages:
       abab: 2.0.5
       whatwg-mimetype: 2.3.0
       whatwg-url: 7.1.0
+
+  /dayjs/1.11.0:
+    resolution: {integrity: sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==}
+    dev: false
 
   /de-indent/1.0.2:
     resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=}
@@ -10143,6 +10180,19 @@ packages:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
+  /rc-util/5.19.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-S28epi9E2s7Nir05q8Ffl3hzDLwkavTGi0PGH1cTqCmkpG1AeBEuZgQDpksYeU6IgHcds5hWIPE5PUcdFiZl8w==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.17.8
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-is: 16.13.1
+      shallowequal: 1.1.0
+    dev: false
+
   /rc/1.2.8:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
@@ -11051,6 +11101,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       kind-of: 6.0.3
+
+  /shallowequal/1.1.0:
+    resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
+    dev: false
 
   /shebang-command/1.2.0:
     resolution: {integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=}

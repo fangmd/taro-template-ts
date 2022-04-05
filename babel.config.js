@@ -19,5 +19,14 @@ module.exports = {
       },
       'taro-hooks',
     ],
+    [
+      'import',
+      {
+        libraryName: '@antmjs/vantui',
+        libraryDirectory: 'es',
+        style: true,
+      },
+      '@antmjs/vantui',
+    ],
   ],
 }
