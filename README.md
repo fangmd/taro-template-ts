@@ -30,3 +30,4 @@ taro 小程序 模版: react, hooks, ts, mobx
 - [x] 750 设计稿 UI 适配
 - [x] base ui utils: showToast, showLoading
 - [x] 微信版本更新弹框提示
+- [x] ui 库：https://antmjs.github.io/vantui/#/home
