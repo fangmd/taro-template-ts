@@ -1,5 +1,7 @@
 taro 小程序 模版: react, hooks, ts, mobx
 
+包管理工具: pnpm
+
 # 注释
 
 必加注释:
@@ -24,8 +26,8 @@ taro 小程序 模版: react, hooks, ts, mobx
 
 - [x] 网路请求封装: 支持 loading
 - [x] 列表 demo，支持下拉刷新和上拉加载
-- [ ] tab + list
-- [ ] mobx 状态管理
+- [x] tab + list
+- [x] mobx 状态管理
 - [x] @ alias 设置
 - [x] 750 设计稿 UI 适配
 - [x] base ui utils: showToast, showLoading

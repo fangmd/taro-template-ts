@@ -1,17 +1,25 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { View, Image } from '@tarojs/components'
 import { hideLoading, showLoading, showToast } from '@/utils/ui'
 import LoginPng from '@/assets/img/common/login2.png'
 import { Button } from '@antmjs/vantui'
+import Taro, { useDidShow } from '@tarojs/taro'
+import { CommonService } from '@/services/CommonService'
 
 import './index.less'
-import Taro from '@tarojs/taro'
-import { CommonService } from '@/services/CommonService'
 
 /**
  * Demo
  */
 const DemoPage: React.FC = () => {
+  useEffect(() => {
+    console.log('DemoPage init')
+  }, [])
+
+  useDidShow(() => {
+    console.log('DemoPage show')
+  })
+
   return (
     <View className='DemoPage__root'>
       <Button
@@ -40,6 +48,15 @@ const DemoPage: React.FC = () => {
         }}
       >
         List Demo
+      </Button>
+      <Button
+        onClick={() => {
+          Taro.navigateTo({
+            url: '/pages/tabListDemo/index',
+          })
+        }}
+      >
+        Tab List Demo
       </Button>
       <Button
         onClick={() => {

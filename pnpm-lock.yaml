@@ -23,6 +23,9 @@ specifiers:
   eslint-plugin-import: ^2.12.0
   eslint-plugin-react: ^7.8.2
   eslint-plugin-react-hooks: ^4.2.0
+  mobx: ^6.5.0
+  mobx-react: ^7.3.0
+  mobx-react-lite: ^3.3.0
   react: ^17.0.2
   react-dom: ^17.0.2
   stylelint: 9.3.0
@@ -38,6 +41,9 @@ dependencies:
   '@tarojs/react': 3.4.4_react@17.0.2
   '@tarojs/runtime': 3.4.4
   '@tarojs/taro': 3.4.4
+  mobx: 6.5.0
+  mobx-react: 7.3.0_3b110ddd052df537d55bc762cdd4d0b8
+  mobx-react-lite: 3.3.0_3b110ddd052df537d55bc762cdd4d0b8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   taro-hooks: 1.5.6_@tarojs+taro@3.4.4+react@17.0.2
@@ -8686,6 +8692,47 @@ packages:
 
   /mobile-detect/1.4.5:
     resolution: {integrity: sha512-yc0LhH6tItlvfLBugVUEtgawwFU2sIe+cSdmRJJCTMZ5GEJyLxNyC/NIOAOGk67Fa8GNpOttO3Xz/1bHpXFD/g==}
+
+  /mobx-react-lite/3.3.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.5.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /mobx-react/7.3.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-RGEcwZokopqyJE5JPwXKB9FWMSqFM9NJVO2QPI+z6laJTJeBHqvPicjnKgY5mvihxTeXB1+72TnooqUePeGV1g==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.5.0
+      mobx-react-lite: 3.3.0_3b110ddd052df537d55bc762cdd4d0b8
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /mobx/6.5.0:
+    resolution: {integrity: sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==}
+    dev: false
 
   /move-concurrently/1.0.1:
     resolution: {integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=}
